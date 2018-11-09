@@ -1,0 +1,16 @@
+<div class="row">
+
+  <div *ngFor="let item of categoryList" class="col-xs-12 col-sm-4 col-md-3 col-lg-4">
+    <div class="box">
+        <div class="box-icon">
+            <span>
+              <img width='65px' src="{{item.category_image}}">
+            </span>
+        </div>
+        <div class="info">
+            <h4 class="text-center">{{item.category_name | substringPipe}}</h4>
+        </div>
+    </div>
+  </div>
+
+</div>
